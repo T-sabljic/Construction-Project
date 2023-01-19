@@ -1,0 +1,29 @@
+.top-navbar{
+    background-color: $whiteColor;
+    padding: 1rem 0;
+    @include flex(space-around, stretch);
+    //Flex Container
+
+    @media (max-width:992px){
+        display: none;
+    }
+
+    article{
+        @include flex(flex-start, center,row, nowrap, 1rem);
+        //Razmak izmedju item elemenata
+
+        i{
+            color: $secondaryColor;
+            font-size: 2rem;
+        }
+        div{
+            h4{
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

@@ -81,4 +81,32 @@ section {
     .btn {
       padding: 0.8rem 1.5rem; } }
 
+.top-navbar {
+  background-color: #fff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0; }
+  @media (max-width: 992px) {
+    .top-navbar {
+      display: none; } }
+  .top-navbar article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem; }
+    .top-navbar article i {
+      color: #fe5d15;
+      font-size: 2rem; }
+    .top-navbar article div h4 {
+      text-transform: uppercase;
+      letter-spacing: 1.2px; }
+    .top-navbar article div p {
+      font-size: 0.9rem; }
+
 /*# sourceMappingURL=style.css.map */
