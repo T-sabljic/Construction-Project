@@ -8,7 +8,7 @@
         display: none;
     }
 
-    article{
+    &_item{
         @include flex(flex-start, center,row, nowrap, 1rem);
         //Razmak izmedju item elemenata
 
@@ -16,12 +16,12 @@
             color: $secondaryColor;
             font-size: 2rem;
         }
-        div{
-            h4{
+        .top-navbar_info{
+            .top-navbar_h4{
                 text-transform: uppercase;
                 letter-spacing: 1.2px;
             }
-            p{
+            .top-navbar_p{
                 font-size: 0.9rem;
             }
         }

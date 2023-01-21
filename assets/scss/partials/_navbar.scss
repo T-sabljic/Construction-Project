@@ -1,0 +1,132 @@
+.navbar{
+    background-color: $primaryColor;
+    @include flex(space-between );
+    position: relative;
+
+    .navbar__logo{
+        @include flex(center, center, row, nowrap, 0.7rem);
+        padding-left: 2rem;
+
+        i{
+            color: $secondaryColor;
+            font-size: 2rem;
+
+            @media (max-width:576px){
+                font-size: 1.5rem;
+            }
+        }
+        .navbar__heading{
+            color: $whiteColor;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 900;
+
+            @media (max-width:576px){
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .navbar__list{
+        display: flex;
+        gap: 1.7rem;
+
+        @media (max-width:992px){
+            // display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: $primaryColor;
+            flex-direction: column;
+            padding-left: 2rem;
+            
+            &.show{
+            
+             display: none;
+            }
+        }
+
+        
+
+        .navbar__listItem{
+
+            padding: 2rem 0;
+
+            @media(max-width:992px){
+                padding: .2rem 0;
+            }
+
+            .navbar__link{
+                color: $whiteColor;
+       
+                text-transform: uppercase;
+
+               &:hover{
+                    color: $secondaryColor;
+               }
+            }
+            .activ{
+                color: $secondaryColor;
+            }
+             
+            &:nth-child(4){
+        
+                position: relative;
+
+                .navbar__submenu{
+                    position: absolute;
+                    top: 5.5rem;
+                    background-color:orange;
+
+                    @media(max-width:992px){
+                        position: static;
+                        margin-top: 1rem;
+                    }
+        
+                   .navbar__submenu__list{
+        
+                    .navbar__submenu__item{
+                        padding: 3px 25px 3px 7px;
+                        &:hover{
+                            background-color: lightblue;
+                        }
+        
+                        .navbar__submenu__link{
+                            font-size: 0.9rem;
+                        }
+                    }
+                   }
+                }
+                .hidden{
+                    display: none;
+                }
+            }
+        }
+        .secondary{
+            background-color: $secondaryColor;
+            padding-right: 2rem;
+            padding-left: 1rem;
+
+            @media(max-width:992px){
+                display: none;
+            
+            }
+        }
+    }
+
+    .hamburger{
+        color: $whiteColor;
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+
+        @media (max-width:992px){
+            display: block;
+            margin-right: 2rem;;
+        }
+        @media (max-width:576px){
+            font-size: 1.5rem;
+        }
+    }
+}

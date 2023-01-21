@@ -93,20 +93,115 @@ section {
   @media (max-width: 992px) {
     .top-navbar {
       display: none; } }
-  .top-navbar article {
+  .top-navbar_item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 1rem; }
-    .top-navbar article i {
+    .top-navbar_item i {
       color: #fe5d15;
       font-size: 2rem; }
-    .top-navbar article div h4 {
+    .top-navbar_item .top-navbar_info .top-navbar_h4 {
       text-transform: uppercase;
       letter-spacing: 1.2px; }
-    .top-navbar article div p {
+    .top-navbar_item .top-navbar_info .top-navbar_p {
       font-size: 0.9rem; }
+
+.navbar {
+  background-color: #040F28;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  position: relative; }
+  .navbar .navbar__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.7rem;
+    padding-left: 2rem; }
+    .navbar .navbar__logo i {
+      color: #fe5d15;
+      font-size: 2rem; }
+      @media (max-width: 576px) {
+        .navbar .navbar__logo i {
+          font-size: 1.5rem; } }
+    .navbar .navbar__logo .navbar__heading {
+      color: #fff;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 900; }
+      @media (max-width: 576px) {
+        .navbar .navbar__logo .navbar__heading {
+          font-size: 1.5rem; } }
+  .navbar .navbar__list {
+    display: flex;
+    gap: 1.7rem; }
+    @media (max-width: 992px) {
+      .navbar .navbar__list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #040F28;
+        flex-direction: column;
+        padding-left: 2rem; }
+        .navbar .navbar__list.show {
+          display: none; } }
+    .navbar .navbar__list .navbar__listItem {
+      padding: 2rem 0; }
+      @media (max-width: 992px) {
+        .navbar .navbar__list .navbar__listItem {
+          padding: .2rem 0; } }
+      .navbar .navbar__list .navbar__listItem .navbar__link {
+        color: #fff;
+        text-transform: uppercase; }
+        .navbar .navbar__list .navbar__listItem .navbar__link:hover {
+          color: #fe5d15; }
+      .navbar .navbar__list .navbar__listItem .activ {
+        color: #fe5d15; }
+      .navbar .navbar__list .navbar__listItem:nth-child(4) {
+        position: relative; }
+        .navbar .navbar__list .navbar__listItem:nth-child(4) .navbar__submenu {
+          position: absolute;
+          top: 5.5rem;
+          background-color: orange; }
+          @media (max-width: 992px) {
+            .navbar .navbar__list .navbar__listItem:nth-child(4) .navbar__submenu {
+              position: static;
+              margin-top: 1rem; } }
+          .navbar .navbar__list .navbar__listItem:nth-child(4) .navbar__submenu .navbar__submenu__list .navbar__submenu__item {
+            padding: 3px 25px 3px 7px; }
+            .navbar .navbar__list .navbar__listItem:nth-child(4) .navbar__submenu .navbar__submenu__list .navbar__submenu__item:hover {
+              background-color: lightblue; }
+            .navbar .navbar__list .navbar__listItem:nth-child(4) .navbar__submenu .navbar__submenu__list .navbar__submenu__item .navbar__submenu__link {
+              font-size: 0.9rem; }
+        .navbar .navbar__list .navbar__listItem:nth-child(4) .hidden {
+          display: none; }
+    .navbar .navbar__list .secondary {
+      background-color: #fe5d15;
+      padding-right: 2rem;
+      padding-left: 1rem; }
+      @media (max-width: 992px) {
+        .navbar .navbar__list .secondary {
+          display: none; } }
+  .navbar .hamburger {
+    color: #fff;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer; }
+    @media (max-width: 992px) {
+      .navbar .hamburger {
+        display: block;
+        margin-right: 2rem; } }
+    @media (max-width: 576px) {
+      .navbar .hamburger {
+        font-size: 1.5rem; } }
 
 /*# sourceMappingURL=style.css.map */

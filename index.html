@@ -29,30 +29,60 @@
       <!-------Topnavbar section starts------>
 
       <div class="top-navbar">
-       <article>
+       <article class="top-navbar_item">
          <i class="fa-solid fa-location-dot"></i>
-         <div>
-          <h4>Our office</h4>
-          <p>123 Street, Paris</p>
+         <div class="top-navbar_info">
+           <h4 class="top-navbar_h4">Our office</h4>
+           <p class="top-navbar_p">123 Street, Paris</p>
          </div>
        </article>
-       <article>
+       <article class="top-navbar_item">
          <i class="fa-regular fa-envelope-open"></i>
-         <div>
-          <h4>Email us</h4>
-          <p>Info@gmail.com</p>
+         <div  class="top-navbar_info">
+           <h4 class="top-navbar_h4">Email us</h4>
+           <p class="top-navbar_p">Info@gmail.com</p>
          </div>
        </article>
-       <article>
+       <article class="top-navbar_item">
          <i class="fa-solid fa-phone"></i>
-         <div>
-          <h4>Call us</h4>
-          <p>+382938922</p>
-        </div>
+         <div  class="top-navbar_info">
+           <h4 class="top-navbar_h4">Call us</h4>
+           <p class="top-navbar_p">+382938922</p>
+         </div>
        </article>
     
       </div>
       <!-------Topnavbar section end------>
+
+      <!-------Navbar section starts------>
+
+
+      <nav class="navbar">
+         <a href="index.html" class="navbar__logo">
+          <i class="fa-solid fa-building"></i>
+          <h1 class="navbar__heading">webuild</h1>
+         </a>
+         <ul class="navbar__list show" id="list">
+          <li class="navbar__listItem"><a href="" class="navbar__link activ">Home</a></li>
+          <li class="navbar__listItem"><a href="" class="navbar__link">About</a></li>
+          <li class="navbar__listItem"><a href="" class="navbar__link">Service</a></li>
+          <li class="navbar__listItem" id="page"><a href="#" class="navbar__link">Pages</a>
+            <div class="navbar__submenu hidden" id="submenu">
+              <ul  class="navbar__submenu__list">
+                <li class="navbar__submenu__item"> <a href="" class="navbar__submenu__link">Our project</a></li>
+                <li class="navbar__submenu__item"> <a href="" class="navbar__submenu__link">The team</a></li>
+                <li class="navbar__submenu__item"> <a href="" class="navbar__submenu__link">Testimonial</a></li>
+                <li class="navbar__submenu__item"> <a href="" class="navbar__submenu__link">Blog grid</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar__listItem"><a href="" class="navbar__link">Contact</a></li>
+          <li class="navbar__listItem secondary"><a href="" class="navbar__link">Get a Quete <i class="fas fa-long-arrow-right"></i></a></li>
+         </ul>
+
+         <i class="fas fa-bars hamburger" id="hamburger"></i>
+      </nav>
+      <!-------Navbar section end--------->
 
 
     <!--------Custom Link JS-->
