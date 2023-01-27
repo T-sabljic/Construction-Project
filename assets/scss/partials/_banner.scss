@@ -1,0 +1,32 @@
+.banner{
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../../assets/img/carousel-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+
+    @include flex(center, center, column);
+
+    &__icon{
+        color: $secondaryColor;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__heading{
+        font-size: 3.5rem;
+        color: $whiteColor;
+        max-width: 600px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media(max-width:768px){
+           font-size: 2.5rem;
+        }
+        @media(max-width:576px){
+            font-size: 2rem;
+        }
+
+    }
+}

@@ -1,0 +1,65 @@
+.about{
+    @include flex(flex-start, center, row, wrap, 4rem);
+
+    @media(max-width:1200px){
+        justify-content: center;
+    }
+
+    article{
+        flex-basis: 45%;
+
+        @media(max-width:1200px){
+            flex-basis: 80%;
+        }
+        @media(max-width:576px){
+            flex-basis: 100%;
+        }
+
+        &.about__text{
+
+            .about__h2{
+                text-align: left;
+
+            }
+            .about__h4{
+                padding: 1.5rem 0;
+                font-size: 1.3rem;
+
+                @media(max-width:576px){
+                    font-size: 1rem;
+                }
+            }
+            .about__p,
+            .about__p1{
+                font-size: 0.8rem;
+            }
+            .about__lists{
+              @include flex(space-between);
+              padding: 1.5rem 0;
+
+              .about__list{
+
+                .about__item{
+                    font-size: 0.8rem;
+                     
+                    i{
+                        color: $secondaryColor;
+                        margin-right: 10px;
+                    }
+                }
+              }
+            }
+        }
+
+        &.about__img{
+            
+            img{
+                height: 500px;
+
+                @media(max-width:576px){
+                    height: 400px;
+                }
+            }
+        }
+    }
+}

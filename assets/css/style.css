@@ -204,4 +204,82 @@ section {
       .navbar .hamburger {
         font-size: 1.5rem; } }
 
+.banner {
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/img/carousel-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0; }
+  .banner__icon {
+    color: #fe5d15;
+    font-size: 3rem;
+    margin-bottom: 1rem; }
+  .banner__heading {
+    font-size: 3.5rem;
+    color: #fff;
+    max-width: 600px;
+    text-align: center;
+    text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .banner__heading {
+        font-size: 2.5rem; } }
+    @media (max-width: 576px) {
+      .banner__heading {
+        font-size: 2rem; } }
+
+.about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem; }
+  @media (max-width: 1200px) {
+    .about {
+      justify-content: center; } }
+  .about article {
+    flex-basis: 45%; }
+    @media (max-width: 1200px) {
+      .about article {
+        flex-basis: 80%; } }
+    @media (max-width: 576px) {
+      .about article {
+        flex-basis: 100%; } }
+    .about article.about__text .about__h2 {
+      text-align: left; }
+    .about article.about__text .about__h4 {
+      padding: 1.5rem 0;
+      font-size: 1.3rem; }
+      @media (max-width: 576px) {
+        .about article.about__text .about__h4 {
+          font-size: 1rem; } }
+    .about article.about__text .about__p,
+    .about article.about__text .about__p1 {
+      font-size: 0.8rem; }
+    .about article.about__text .about__lists {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 0;
+      padding: 1.5rem 0; }
+      .about article.about__text .about__lists .about__list .about__item {
+        font-size: 0.8rem; }
+        .about article.about__text .about__lists .about__list .about__item i {
+          color: #fe5d15;
+          margin-right: 10px; }
+    .about article.about__img img {
+      height: 500px; }
+      @media (max-width: 576px) {
+        .about article.about__img img {
+          height: 400px; } }
+
 /*# sourceMappingURL=style.css.map */
