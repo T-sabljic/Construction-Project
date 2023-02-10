@@ -282,4 +282,179 @@ section {
         .about article.about__img img {
           height: 400px; } }
 
+.services {
+  background-color: #F4F6F8; }
+  .services .section-title {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 2rem; }
+  .services .services__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem; }
+    @media (max-width: 768px) {
+      .services .services__wrapper {
+        justify-content: center; } }
+    .services .services__wrapper .services__item {
+      flex-basis: 30%;
+      position: relative; }
+      @media (max-width: 1200px) {
+        .services .services__wrapper .services__item {
+          flex-basis: 45%; } }
+      @media (max-width: 768px) {
+        .services .services__wrapper .services__item {
+          flex-basis: 90%; } }
+      .services .services__wrapper .services__item .services__img .services__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .services .services__wrapper .services__item .services__img .services__icon i {
+          width: 70px;
+          line-height: 70px;
+          height: 70px;
+          border-radius: 50%;
+          text-align: center;
+          background-color: #fff;
+          color: #fe5d15;
+          margin-top: -30px; }
+      .services .services__wrapper .services__item .services__text {
+        text-align: center;
+        padding: 1rem;
+        background-color: #fff; }
+        .services .services__wrapper .services__item .services__text .services__heading {
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          margin: 1rem 0; }
+        .services .services__wrapper .services__item .services__text .services__p {
+          font-size: 0.8rem;
+          margin-bottom: 0.5rem;
+          text-align: justify; }
+        .services .services__wrapper .services__item .services__text .services__link {
+          color: #fe5d15;
+          text-transform: uppercase;
+          font-size: 0.9rem; }
+          .services .services__wrapper .services__item .services__text .services__link::after {
+            width: 50px;
+            height: 3px;
+            content: "";
+            background-color: #fe5d15;
+            display: block;
+            margin: auto;
+            opacity: 0;
+            transition: .5s linear; }
+          .services .services__wrapper .services__item .services__text .services__link:hover::after {
+            opacity: 1; }
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0; }
+  @media (max-width: 1200px) {
+    .contact {
+      justify-content: center;
+      gap: 2rem; } }
+  .contact__item:nth-child(1) {
+    flex-basis: 38%; }
+    @media (max-width: 1200px) {
+      .contact__item:nth-child(1) {
+        flex-basis: 80%; } }
+    @media (max-width: 768px) {
+      .contact__item:nth-child(1) {
+        flex-basis: 100%; } }
+    .contact__item:nth-child(1) .contact__heading {
+      text-align: left;
+      margin-bottom: 1rem; }
+    .contact__item:nth-child(1) .contact__p {
+      margin-bottom: 1.5rem;
+      text-align: justify; }
+  .contact__item:nth-child(2) {
+    flex-basis: 58%; }
+    @media (max-width: 1200px) {
+      .contact__item:nth-child(2) {
+        flex-basis: 80%; } }
+    @media (max-width: 768px) {
+      .contact__item:nth-child(2) {
+        flex-basis: 100%; } }
+    .contact__item:nth-child(2) .contact__form {
+      background-color: #F4F6F8;
+      padding: 2.5rem; }
+      .contact__item:nth-child(2) .contact__form .contact__form-group {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 2rem; }
+        @media (max-width: 768px) {
+          .contact__item:nth-child(2) .contact__form .contact__form-group {
+            flex-direction: column; } }
+        .contact__item:nth-child(2) .contact__form .contact__form-group .contact__input {
+          color: #777;
+          padding: 1rem;
+          line-height: 1.5;
+          display: block;
+          width: 100%;
+          font-size: 1.1rem; }
+          @media (max-width: 576px) {
+            .contact__item:nth-child(2) .contact__form .contact__form-group .contact__input {
+              padding: 0.5rem;
+              font-size: 0.9rem; } }
+      .contact__item:nth-child(2) .contact__form .contact__textarea {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem; }
+      .contact__item:nth-child(2) .contact__form .contact__submit {
+        display: block;
+        width: 100%; }
+
+.projects {
+  background-color: #F4F6F8; }
+  .projects__heading {
+    margin: auto;
+    max-width: 550px; }
+    @media (max-width: 576px) {
+      .projects__heading {
+        max-width: 400px; } }
+  .projects__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0; }
+    @media (max-width: 576px) {
+      .projects__btns {
+        flex-direction: column; } }
+    .projects__btns .project__btn {
+      margin-right: 1rem; }
+  .projects .project__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem; }
+    .projects .project__wrapper .project__item {
+      flex-basis: 30%;
+      position: relative;
+      margin-bottom: 3rem; }
+      @media (max-width: 1200px) {
+        .projects .project__wrapper .project__item {
+          flex-basis: 45%; } }
+      @media (max-width: 576px) {
+        .projects .project__wrapper .project__item {
+          flex-basis: 100%; } }
+      .projects .project__wrapper .project__item .project__name {
+        position: absolute;
+        bottom: -3rem;
+        left: 1rem;
+        right: 1rem;
+        background-color: #fff;
+        padding: 2rem; }
+        .projects .project__wrapper .project__item .project__name .project__title {
+          text-transform: uppercase; }
+        .projects .project__wrapper .project__item .project__name i {
+          color: #040F28; }
+
 /*# sourceMappingURL=style.css.map */

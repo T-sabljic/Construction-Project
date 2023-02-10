@@ -1,0 +1,64 @@
+.projects{
+    background-color: #F4F6F8;
+
+    &__heading{
+        margin: auto;
+        max-width: 550px;
+
+        @media(max-width:576px){
+            max-width: 400px;
+        }
+    }
+
+    &__btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+
+        @media(max-width:576px){
+            flex-direction: column;
+        }
+
+        .project__btn{
+            margin-right: 1rem;
+        }
+        
+    }
+
+    .project__wrapper{
+        @include flex(space-between, center, row, wrap, 1rem);
+    
+
+        .project__item{
+            flex-basis: 30%;
+            position: relative;
+            margin-bottom: 3rem;
+
+            @media(max-width:1200px){
+                flex-basis: 45%;
+            }
+
+            @media(max-width:576px){
+                flex-basis: 100%;
+            }
+
+            .project__name{
+                position: absolute;
+                bottom: -3rem;
+                left: 1rem;
+                right: 1rem;
+                background-color: $whiteColor;
+                padding: 2rem;
+
+                .project__title{
+                    text-transform: uppercase;
+                    
+                }
+                i{
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}
