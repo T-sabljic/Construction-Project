@@ -1,0 +1,22 @@
+.scrollTop{
+    display: none;
+    padding: 0.8rem 1rem;
+    background-color: $secondaryColor;
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+
+    &:hover{
+        background-color:#e37441;
+    }
+    &:hover i{
+        color: $primaryColor;
+    }
+    i{
+        color: $whiteColor;
+        font-size: 1.1rem;
+    }
+}
+.scrollShow{
+    display: block;
+}
