@@ -1,5 +1,5 @@
 .projects{
-    background-color: #F4F6F8;
+    background-color: $lightBlue;
 
     &__heading{
         margin: auto;
@@ -11,9 +11,7 @@
     }
 
     &__btns{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center,center);
         margin: 3rem 0;
 
         @media(max-width:576px){
@@ -29,7 +27,6 @@
     .project__wrapper{
         @include flex(space-between, center, row, wrap, 1rem);
     
-
         .project__item{
             flex-basis: 30%;
             position: relative;
@@ -44,16 +41,12 @@
             }
 
             .project__name{
-                position: absolute;
-                bottom: -3rem;
-                left: 1rem;
-                right: 1rem;
+                @include position(absolute,auto,1rem,-3rem,1rem);
                 background-color: $whiteColor;
                 padding: 2rem;
 
                 .project__title{
                     text-transform: uppercase;
-                    
                 }
                 i{
                     color: $primaryColor;

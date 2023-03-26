@@ -1,14 +1,25 @@
 footer{
-    background-color:#040F28;
+    background-color:$darkBlue;
 
     .footer__bottomLine{
          border-bottom: 2px solid $secondaryColor;
 
         .footer__wrapper{
             display: flex;
+            flex-wrap: wrap;
+
+            @media(max-width: 992px){
+                justify-content: center;
+                align-items: center;
+            }
 
             .footer__item:first-child{
                 border-right: 2px solid $secondaryColor;
+
+                @media(max-width: 992px){
+                    border-right: none;
+                    border-bottom: 2px solid $secondaryColor;
+                }
 
                 .footer__logo{
                     
@@ -18,10 +29,18 @@ footer{
                         color: $whiteColor;
                         text-transform: uppercase;
                         padding-left: 10px;
+
+                        @media(max-width:992px){
+                            font-size: 2rem;
+                        }
                     }
                     i{
                         color: $secondaryColor;
                         font-size: 3rem;
+
+                        @media(max-width:992px){
+                            font-size: 2rem;
+                        }
                     }
                 }
 
@@ -50,11 +69,9 @@ footer{
                         &::after{
                             display: block;
                             content: "";
-                            position: absolute;
-                            bottom: -8px;
+                            @include position(absolute,auto,auto,-8px,50%);
                             width: 0px;
                             height: 3px;
-                            left: 50%;
                             background: $primaryColor;
                             transition: .5s linear;
                         }
@@ -71,6 +88,12 @@ footer{
                             line-height: 40px;
                             text-align: center;
                             margin: 0 2px;
+
+                            @media(max-width:992px){
+                                width: 30px;
+                                height: 30px;
+                                line-height: 30px;
+                            }
                             
                             &:hover{
                                 color: $whiteColor;
@@ -87,10 +110,27 @@ footer{
                 padding: 5rem 0px;
                 color: rgba(255,255,255,0.5);
 
+                @media(max-width:992px){
+                    flex-basis: 70%;
+                }
+                @media(max-width:576px){
+                    padding: 3rem 0;
+                }
+                
+
                 .footer__item__wrapper{
                     display: flex;
                     justify-content: space-between;
                     margin-left: 2rem;
+
+                    @media(max-width:992px){
+                        margin-left: 0;
+                    }
+                    @media(max-width:576px){
+                        flex-direction: column;
+                        gap: 1rem;
+                    }
+                   
 
                     .footer__block{
 
@@ -124,10 +164,18 @@ footer{
                     font-size: 1.5rem;
                     text-transform: uppercase;
                     margin: 2rem 0 1rem 2rem;
+
+                    @media(max-width:992px){
+                        margin-left: 0;
+                    }
                 }
 
                 .footer__form{
                     margin-left: 2rem;
+
+                    @media(max-width:992px){
+                        margin-left: 0;
+                    }
 
                     input{
                         width: 100%;
@@ -140,13 +188,16 @@ footer{
     }
 
     .footer__designer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(space-between,center,row,wrap);
 
         p{
             color: $whiteColor;
             font-size: 0.8rem;
+
+            @media(max-width: 576px){
+                margin: auto;
+                text-align: center;
+            }
         }
 
         & > p{
@@ -164,8 +215,24 @@ footer{
             padding:1rem 5% ;
             position: relative;
 
+            @media(max-width:576px){
+                background-color: $primaryColor;
+                margin: auto;
+                text-align: center;
+            }
+
             span{
                 color: $primaryColor;
+
+                @media(max-width:576px){
+                    color:$secondaryColor
+                }
+            }
+
+            p{
+                @media(max-width: 992px){
+                    padding-left: 2rem;
+                }
             }
         }
         .footer__shape::before{
@@ -177,6 +244,10 @@ footer{
             left: -40px;
             background-color: $secondaryColor;
             transform: skew(40deg);
+
+            @media(max-width:576px){
+            display: none;
+            }
         }
     }
 }

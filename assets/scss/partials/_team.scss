@@ -1,5 +1,4 @@
 .team{
-
     .section-title{
         padding-bottom: 3rem;
         max-width: 550px;
@@ -7,10 +6,7 @@
     }
 
     .team__wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        @include flex(space-between,center,row, wrap);
 
         @media(max-width:768px){
             justify-content: center;
@@ -18,6 +14,7 @@
 
         .team__item{
             flex-basis: 22%;
+            background-color: $lightBlue;
 
             @media(max-width:1200px){
                 flex-basis: 45%;
@@ -37,7 +34,6 @@
                         padding-left: 0.5rem;
                         display: block;
                         
-
                         &::after{
                             width: 100%;
                             content: "";

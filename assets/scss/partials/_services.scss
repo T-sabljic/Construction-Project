@@ -1,5 +1,5 @@
 .services{
-    background-color: #F4F6F8;
+    background-color: $lightBlue;
 
     .section-title{
         max-width: 500px;
@@ -8,6 +8,7 @@
     }
     .services__wrapper{
         @include flex(space-between,center,row,wrap, 2rem);
+
         @media(max-width:768px){
             justify-content: center;
         }
@@ -30,9 +31,7 @@
             .services__img{
 
                 .services__icon{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(center,center);
                     
                     i{
                         width: 80px;
